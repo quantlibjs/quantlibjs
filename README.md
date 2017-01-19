@@ -23,7 +23,7 @@ bower install quantlib.js
 
 * Browser
 
-`$ql will be created after loading js file
+`$ql` will be created after loading js file
 
 * Node.js
 
