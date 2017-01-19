@@ -1,0 +1,27 @@
+{
+  "name": "quantlib.js",
+  "description": "QuantLib in Pure JavaScript",
+  "version": "0.1.0",
+  "keywords": [
+    "QuantLib"
+  ],
+  "main": "lib/quantlib.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quantlibjs/quantlibjs.git"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "engines": {
+    "node": ">= 0.12"
+  },
+  "scripts": {
+    "prepublish": "npm prune"
+  },
+  "bugs": {
+        "url": "http://github.com/quantlibjs/quantlibjs/issues"
+  },
+  "author": "Jerry Jin",
+  "license": "MIT"
+}
