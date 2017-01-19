@@ -38,7 +38,7 @@ use `new` to create object
 ```js
 // create a new Matrix object
 var m1 = new $ql.Matrix({
-                          "rows:6",
+                          "rows":6,
                           "columns":9
                         });
 ```
