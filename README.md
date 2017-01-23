@@ -1,4 +1,4 @@
-# QuantLib in Pure JavaScript [![npm version](https://badge.fury.io/js/quantlib.js.svg)](http://badge.fury.io/js/quantlib.js) [![Bower version](https://badge.fury.io/bo/quantlib.js.svg)](https://badge.fury.io/bo/qunatlib.js) [![Twitter Follow](https://img.shields.io/twitter/follow/quantlibjs.svg?style=social&maxAge=3600)](https://twitter.com/quantlibjs)
+# QuantLib in Pure JavaScript [![npm version](https://badge.fury.io/js/quantlib.js.svg)](https://www.npmjs.com/package/quantlib.js) [![Bower version](https://badge.fury.io/bo/quantlib.js.svg)](https://qunatlibjs.com) [![Twitter Follow](https://img.shields.io/twitter/follow/quantlibjs.svg?style=social&maxAge=3600)](https://twitter.com/quantlibjs)
 
 
 > This project is still at very early stage, **DO Expect Bugs**
@@ -57,3 +57,14 @@ Matrix { ptr: 13611328 }
 Function names are same as QuantLib, and all functions takes one parameter: `opts`
 
 If function has no paramter, just call it without paramter, otherwise pass a `JSON` object to the function, in this object put `paramter: value` elements, the paramter name must match QuantLib functions.
+
+#### Inheritance
+
+```js
+// Calendar is TARGET's base class
+var tgt = new $ql.TARGET();
+var d = new $ql.Date({"d":19,"m":3,"y":2014});
+// calling menthods from base class
+tgt.isHoliday({"d":d});
+tgt.isBusinessday({"d":d});
+```
